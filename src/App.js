@@ -3,22 +3,32 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div id = "main-page">
+            <div id = "sign-in">
+                <div id = "header-titles">
+                    <h1 id = "welcome-back">Welcome Back!</h1> 
+                    <h4 id = "header-signin">Sign in to continue</h4>
+                </div>
+                <div id = "inputs">
+                    <div id = "inputs-headers">
+                        <p class = "input-text">EMAIL</p>
+                        <p class = "input-text">PASSWORD</p>
+                    </div>
+                    <div id = "signin-fields">
+                        <input type = "email" value = "thisisanemail@email.com"></input>
+                        <input type = "password" value = "Create Password"></input>
+                    </div>
+                </div>
+                <div id = "footer">
+                    <p>Haven't activated your account yet? <a href = "htttps">Activate Now</a></p> 
+                    {/* <a href = "htttps">Activate Now</a> */}
+                    <div id = "signin-button">
+                      <button type = "button">Sign In</button>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
   );
 }
 
